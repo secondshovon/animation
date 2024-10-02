@@ -1,0 +1,74 @@
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	position: relative;
+	animation-name: test;
+	animation-duration: 5s;
+/*	animation-delay: 0.5s;*/
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-timing-function: ease-in;
+}
+
+/*@keyframes test{
+	from{background-color: orange;}
+	to{background-color: blueviolet;}
+}
+*/
+@keyframes test{
+	0%{background-color: orange; left: 0px; top: 0px;}
+	25%{background-color: blueviolet; left: 1163px; top: 0px;}
+	50%{background-color: darkolivegreen; left: 1163px; top: 450px;}
+	75%{background-color: mediumpurple; left: 0px; top: 450px;}
+	100%{background-color: magenta; left: 0px; top: 0px;}
+}
+
+
+#div1, #div2, #div3, #div4, #div5{
+
+	width: 100px;
+	height: 50px;
+	color: whitesmoke;
+	text-align: center;
+	margin: 5px;
+	font-size: 16px;
+	border-radius: 40px;
+	background-color: orange;
+	font-weight: bold;
+	position: relative;
+	animation: mymove 5s infinite;
+}
+
+h1{
+	width: 400px;
+	margin: 0 auto;
+	font-weight: 600;
+	font-style: italic;
+	text-align: center;
+	border: 2px solid blueviolet;
+	border-radius: 5px;
+}
+
+#div1{animation-timing-function: linear;}
+#div2{animation-timing-function: ease;}
+#div3{animation-timing-function: ease-in;}
+#div4{animation-timing-function: ease-out;}
+#div5{animation-timing-function: ease-in-out;}
+
+@keyframes mymove{
+	from{left: 0px;}
+	to{left: 1163px;}
+}
+
+
+h2{
+	color: ghostwhite;
+	background-color: blueviolet;
+	border-radius: 40px;
+	font-weight: 600;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
